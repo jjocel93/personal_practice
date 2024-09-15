@@ -98,6 +98,10 @@ h6 {
   padding: 6px 10px;
 }
 
+.phone-logo {
+  width: 5rem;
+}
+
 /* bottom nav sytles  */
 
 #bottom-nav {
@@ -154,14 +158,8 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-  }
-
-  /* #mobile-menu {
-    /* display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 6rem;
-    margin-top: 10px; */
+  }
 
   .emergency-call a {
     background-color: red;
@@ -173,7 +171,7 @@ h6 {
   }
 
   .nav-logo-mobile {
-    width: 5rem;
+    width: 10rem;
   }
 
   .nav-burger {
