@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  font-family: 'Libre Franklin', system-ui;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #77d4fc;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.nav-logo {
+  width: 18rem;
+  margin-left: 50px;
+}

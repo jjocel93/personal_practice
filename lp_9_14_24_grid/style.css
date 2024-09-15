@@ -1,0 +1,182 @@
+/* CSS for GP Website */
+
+/* global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  font-family: 'Libre Franklin', system-ui;
+}
+
+/* main header styles */
+
+.main-header {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+}
+
+/* nav global sytles  */
+
+.nav-logo {
+  width: 18rem;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+/* top nav styles */
+
+#top-nav {
+  display: grid;
+  grid-template-columns: auto 4fr;
+  background-color: #1e3a5f;
+  padding: 20px;
+}
+
+#top-nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+#top-nav-links a {
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.emergency-call a {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+/* bottom nav sytles  */
+
+#bottom-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  padding: 15px;
+  justify-items: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+#bottom-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+#bottom-nav-links a {
+  color: #1e3a5f;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-right: 1px solid #1e3a5f;
+  padding: 5px 15px;
+}
+
+#bottom-nav-links :nth-child(5) a {
+  border: none;
+}
+
+#search-icon {
+  width: 50px;
+}
+
+/* Mobile Menu Styling */
+.mobile-header {
+  display: none;
+}
+
+/* Media Query when Screen Gets Smaller  */
+
+@media (max-width: 768px) {
+  .main-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  #mobile-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  /* #mobile-menu {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 10px; */
+
+  .emergency-call a {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 0.5rem;
+  }
+
+  .nav-logo-mobile {
+    width: 5rem;
+  }
+
+  .nav-burger {
+    width: 2rem;
+  }
+}
