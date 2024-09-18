@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
+    <section class="headers">
       <!-- Header/Navbar-->
       <header class="main-header">
         <nav class="navbar" id="top-nav">
           <div class="emergency-call">
-            <a href="#" class="nav-link">Emergency</a>
+            <a href="#" class="nav-link">Emergency Call <img src="phone.svg" class="phone-logo" alt="Phone search-icon" /></a>
           </div>
           <ul class="links" id="top-nav-links">
             <li><a href="#" class="nav-link">About Us</a></li>
@@ -30,13 +30,9 @@
             </li>
           </ul>
         </nav>
-
         <nav class="navbar" id="bottom-nav">
           <a href="#" class="nav-logo">
-            <img
-              src="Huisartsen Frederik Hendrik.png"
-              alt="Huisartsen Frederik Hendrik"
-            />
+            <img src="Huisartsen Frederik Hendrik.png" alt="Huisartsen Frederik Hendrik" />
           </a>
           <ul class="links" id="bottom-nav-links">
             <li><a href="#" class="nav-link">Register</a></li>
@@ -49,20 +45,30 @@
       <!-- Header for Small Screens -->
       <header class="mobile-header">
         <nav class="navbar" id="mobile-menu">
-          <div class="emergency-call-2">
-            <a href="#" class="nav-link">Emergency</a>
+          <div class="emergency-call">
+            <a href="#" class="nav-link">Emergency <img src="phone.svg" class="phone-logo" alt="Phone search-icon" /></a>
           </div>
           <a href="#" class="nav-logo-mobile">
-            <img
-              src="Huisartsen Frederik Hendrik.png"
-              alt="Huisartsen Frederik Hendrik"
-            />
+            <img src="Huisartsen Frederik Hendrik.png" alt="Huisartsen Frederik Hendrik" />
           </a>
           <a href="#" class="nav-burger">
             <img src="menu.svg" alt="Navigation Menu Hamburger" />
           </a>
         </nav>
       </header>
-    </div>
+    </section>
+
+    <section class="photo-slide">
+      <div class="slider">
+        <div class="slides">
+          <img src="doctorpic-1.jpg" alt="Photo of Doctors Office" class="slide" />
+          <img src="doctorpic-2.jpg" alt="Photo of Doctor" class="slide" />
+          <img src="doctorpic-3.jpg" alt="Photo of X-Ray" class="slide" />
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
